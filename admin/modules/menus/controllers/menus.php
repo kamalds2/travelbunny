@@ -241,6 +241,7 @@ private function updateMenuItem($item, $parent_id = 0, $position = 0) {
     public function addMenuDetails() {
         try{ 
             $result = $this->model->addMenuDetails($_POST); 
+            
 
             if($result) {
 
@@ -252,7 +253,7 @@ private function updateMenuItem($item, $parent_id = 0, $position = 0) {
 
             } else {
 
-                $this->session->sets("faillure", 'sorry due to some error process not completed');
+                $this->session->sets("faillure", 'Not Added ');
 
                 $this->set_logs($this->session->gets('adminuser_id'),'menus','addMenuDetails'.implode('~', $_POST),'error_logs','Menus Not added ','ERR');
 
@@ -261,7 +262,7 @@ private function updateMenuItem($item, $parent_id = 0, $position = 0) {
             }
 
         } catch (Exception $e)  {
-            $this->session->sets("failure", 'sorry due to some error process not completed');
+            $this->session->sets("failure", 'Not Added');
 
             $this->redirect('menus');
 

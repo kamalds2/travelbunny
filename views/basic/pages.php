@@ -4,7 +4,7 @@
         <h2 class="page-header__title wow animated fadeInLeft" data-wow-delay="0s" data-wow-duration="1500ms"><?php echo $this->pageDetails->res->page_title;?></h2>
         <div class="page-header__breadcrumb-box">
             <ul class="travel-breadcrumb">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="<?php echo SITEURL;?>">Home</a></li>
                 <li><?php echo $this->pageDetails->res->page_title;?></li>
             </ul>
         </div>

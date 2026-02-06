@@ -1,0 +1,4 @@
+[1][2025/06/17 17:06:19][::1][login][loginSubmitadmin@siriinnovations.com~Admin1@ine~][Login]
+[1][2025/06/17 17:06:26][::1][menus][index][Menus]
+[1][2025/06/17 17:06:57][::1][menus][ajaxSaveMenu[{"label":"Home","id":1},{"label":"Tales","id":9},{"label":"Uzumaki naruto","id":7},{"label":"Naruto","id":8},{"label":"About Us","id":6},{"label":"What We Do","id":2},{"label":"Why To Choose","id":4},{"label":"Tour Listings","id":3},{"label":"Testimonials","id":5}]][Menu Updted Successfully]
+[1][2025/06/17 17:07:00][::1][menus][index][Menus]

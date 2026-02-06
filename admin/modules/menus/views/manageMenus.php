@@ -502,6 +502,7 @@ $('#serialize').click(function () {
         method: 'post',
         url: "<?php echo SITEURL;?>menus/ajaxSaveMenu",
         data: 'menu='+serialized,
+       
         success: function (msg) {
           $("#divSuccessMsg").show();
           $("#divSuccessMsg").html(msg);

@@ -116,10 +116,10 @@ class Model {
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($curl);
-        if($url=="travelbunny/getalltestimonials"){
+       /* if($url=="travelbunny/getalltestimonials"){
            var_dump($result);
            die();}
-        curl_close($curl);
+        curl_close($curl);*/
         //print_r($result);exit;
         $decoded = json_decode($result);
          //print_r($decoded);exit;

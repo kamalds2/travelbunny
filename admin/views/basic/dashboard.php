@@ -189,56 +189,7 @@
                                 </div>
                             </div><!-- end col -->
                             
-                            <div class="col-xl-12">
-                                <div class="card">
-                                    <div class="card-header align-items-center d-flex">
-                                        <h4 class="card-title mb-0 flex-grow-1">Recent Enquiries</h4>
-                                         
-                                    </div><!-- end card header -->
-                                
-                                    <div class="card-body">
-                                        <div class="table-responsive ">
-                                            <table class="table dataTable table-dynamic filter-footer" style="width:100%"  id="alternative-pagination">
-                                                <thead class="table-light">
-                                                    <tr>
-                                                        <th scope="col">Name</th>
-                                                        <th scope="col">Mobile</th>
-                                                        <th scope="col">Email</th>
-                                                        <th scope="col">Destination</th>
-                                                        <th scope="col">Action</th> 
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <?php
-                                                        $enquiries = @$this->enquiries->enquiries;
-                                                        if(!empty($enquiries)){ 
-                                                            foreach ($enquiries as $key => $v) {
-                                                            ?>
-                                                                <tr>
-                                                                    <td>  <?php echo $v->name; ?>  </td>
-                                                                    <td>  <?php echo $v->mobile_no; ?>  </td>
-                                                                    <td>  <?php echo $v->email; ?>  </td>
-                                                                    <td>  <?php echo $v->destination; ?>  </td>
-                                                                    <td>  <?php if($v->message != '') {?>
-                                                                        <a href="" class="text-muted px-1 d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="<?php echo $v->message;?>"><i class="mdi mdi-information-outline"></i></a>
-                                                                    <?php } ?>
-                                                                    </td>
-                                                                 
-                                                                </tr>
-                                                            
-                                                            
-
-
-                                                        <?php }} ?>
-                                                   <!-- end tr -->
-                                                     
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                         
-                                    </div>
-                                </div>
-                            </div><!-- end col -->
+                           
                         </div>
 
                         

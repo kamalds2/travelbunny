@@ -119,6 +119,7 @@
 <script type="text/javascript"> 
 
         $(document).on('click', '.deletePage', function() { 
+             $("#divsuccess").fadeOut(5000);
             var delId = $(this).data('id'); 
             bootbox.confirm({
             title: "<strong>Confirmation</strong> Box",
@@ -140,6 +141,7 @@
                         url:"<?php echo SITEURL; ?>pages/deletePage",
                         data: 'page_id='+ delId,
                         success: function(data) {
+                            $("#divsuccess").fadeOut(5000);
                             document.location.reload();
                         }
                     });

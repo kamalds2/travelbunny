@@ -39,7 +39,7 @@
 		    $data['modified_date'] = date('Y-m-d H:i:s');
 		    $data['modified_by'] = $this->session->gets('adminuser_id');
 		    $url = RESTURL."users/edituser"; 
-		    // echo $url;var_dump(json_encode($data));die();
+		    
 		    $res = $this->CallAPI("POST",$url,$data); 
 		    return $res;
 		}
